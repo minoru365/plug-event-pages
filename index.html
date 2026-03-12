@@ -46,6 +46,25 @@
     box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
   }
 
+  .connpass-link {
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
+    color: #f4f8fc;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+  }
+
   .hero::after {
     content: "";
     position: absolute;
@@ -128,6 +147,33 @@
     gap: 10px;
   }
 
+  .link-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .link-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: var(--bg-soft);
+  }
+
+  .link-item a {
+    color: #21446d;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .link-item span {
+    color: var(--text-sub);
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+
   .point {
     padding: 12px 14px;
     border-radius: 14px;
@@ -187,6 +233,7 @@
 
 <main class="shell">
   <section class="hero">
+    <a class="connpass-link" href="https://plug.connpass.com/" target="_blank" rel="noopener noreferrer">connpassを見る</a>
     <div class="eyebrow">PLUG Event Guide</div>
     <h1>PLUG イベントの <span>導入ページ</span></h1>
     <p>初参加の方向けに、コミュニティの考え方とDiscordの使い方を分けて案内しています。イベント前に必要なページを開いて、そのまま確認してください。</p>
@@ -219,15 +266,14 @@
       </article>
 
       <article class="card">
-        <div class="card-kicker">Academy</div>
-        <h2>Agent Academy おさらい</h2>
-        <p>Copilot Studio Agent Academy の前回内容を振り返り、当日の開始地点を揃えるためのスライドです。</p>
-        <div class="points">
-          <div class="point">ミッション 00 から 03-3 までの流れと要点を短時間で確認できます。</div>
-          <div class="point">当日の進行で 03-4 から再開する前提を参加者へ共有できます。</div>
-        </div>
-        <div class="actions">
-          <a class="button primary" href="academy_recap_260313.html">おさらいページを開く</a>
+        <div class="card-kicker">Related Links</div>
+        <h2>関連リンク</h2>
+        <p>PLUG 関連の資料や補助コンテンツを、作成日の新しい順にここへ追加していく想定のエリアです。</p>
+        <div class="link-list">
+          <div class="link-item">
+            <a href="academy_recap.html">Copilot Studio Agent Academy勉強会おさらい</a>
+            <span>前回内容の振り返りと、当日の開始地点を揃えるためのスライドです。</span>
+          </div>
         </div>
       </article>
     </div>
