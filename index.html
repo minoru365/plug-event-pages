@@ -88,7 +88,7 @@
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 28px;
   }
@@ -171,37 +171,8 @@
     transform: translateY(-1px);
   }
 
-  .meta {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
-    margin-top: 24px;
-  }
-
-  .meta-box {
-    padding: 16px 18px;
-    border-radius: 18px;
-    border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.06);
-  }
-
-  .meta-box strong {
-    display: block;
-    color: var(--accent);
-    margin-bottom: 6px;
-    font-size: 0.85rem;
-    letter-spacing: 0.05em;
-  }
-
-  .meta-box span {
-    color: #d7e6f6;
-    line-height: 1.7;
-    font-size: 0.92rem;
-  }
-
   @media (max-width: 900px) {
-    .grid,
-    .meta {
+    .grid {
       grid-template-columns: 1fr;
     }
 
@@ -246,21 +217,19 @@
           <a class="button primary" href="discord_audio_guide.html">音声設定ガイドを開く</a>
         </div>
       </article>
-    </div>
 
-    <div class="meta">
-      <div class="meta-box">
-        <strong>操作</strong>
-        <span>各ページでは画面下の矢印、またはキーボードの上下左右キーでスライドを送れます。</span>
-      </div>
-      <div class="meta-box">
-        <strong>公開方式</strong>
-        <span>画像をすべて埋め込んだ自己完結HTMLなので、GitHub Pagesでそのまま表示できます。</span>
-      </div>
-      <div class="meta-box">
-        <strong>用途</strong>
-        <span>Connpass案内、Discord固定投稿、イベント冒頭の導線として使いやすい構成です。</span>
-      </div>
+      <article class="card">
+        <div class="card-kicker">Academy</div>
+        <h2>Agent Academy おさらい</h2>
+        <p>Copilot Studio Agent Academy の前回内容を振り返り、当日の開始地点を揃えるためのスライドです。</p>
+        <div class="points">
+          <div class="point">ミッション 00 から 03-3 までの流れと要点を短時間で確認できます。</div>
+          <div class="point">当日の進行で 03-4 から再開する前提を参加者へ共有できます。</div>
+        </div>
+        <div class="actions">
+          <a class="button primary" href="academy_recap_260313.html">おさらいページを開く</a>
+        </div>
+      </article>
     </div>
   </section>
 </main>
