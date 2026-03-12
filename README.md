@@ -32,15 +32,3 @@ git push
 - 画像は各HTMLに埋め込まれているため、大きな差分になりやすい点に注意します
 - 共同編集者は GitHub 上で issue または pull request の説明を残してから変更する運用を推奨します
 
-## 共有テンプレート
-
-以下の文面をそのまま案内に使えます。
-
-```text
-PLUGイベント向けの導入ページです。必要に応じて以下を参照してください。
-
-- 入口ページ: https://minoru365.github.io/plug-event-pages/
-- コミュニティ紹介: https://minoru365.github.io/plug-event-pages/plug_intro.html
-- Discord音声設定ガイド: https://minoru365.github.io/plug-event-pages/discord_audio_guide.html
-- Agent Academy おさらい: https://minoru365.github.io/plug-event-pages/academy_recap.html
-```
