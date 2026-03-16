@@ -7,7 +7,7 @@ PLUGイベント向けの導入ページ一式です。
 - index.html: 入口ページ
 - plug_intro.html: コミュニティ紹介
 - discord_audio_guide.html: Discord音声設定ガイド
-- academy_recap.html: Agent Academy おさらいページ
+- academy_recap.html: Agent Academy おさらいページ（Mission別に随時更新）
 
 ## 公開先
 
@@ -31,4 +31,3 @@ git push
 - 公開URLの導線を変える変更では、index.html のリンク切れ確認も合わせて行います
 - 画像は各HTMLに埋め込まれているため、大きな差分になりやすい点に注意します
 - 共同編集者は GitHub 上で issue または pull request の説明を残してから変更する運用を推奨します
-
