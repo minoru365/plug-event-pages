@@ -150,9 +150,28 @@
   .link-list {
     display: grid;
     gap: 10px;
-    max-height: 260px;
+    flex-grow: 1;
     overflow-y: auto;
-    padding-right: 4px;
+    padding-right: 6px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(33, 68, 109, 0.2) transparent;
+  }
+
+  .link-list::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .link-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .link-list::-webkit-scrollbar-thumb {
+    background: rgba(33, 68, 109, 0.2);
+    border-radius: 999px;
+  }
+
+  .link-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(33, 68, 109, 0.4);
   }
 
   .link-item {
@@ -236,10 +255,7 @@
 
 <main class="shell">
   <section class="hero">
-    <a class="connpass-link" href="https://plug.connpass.com/" target="_blank" rel="noopener noreferrer">connpassを見る</a>
-    <div class="eyebrow">PLUG Event Guide</div>
-    <h1>PLUG イベントの <span>導入ページ</span></h1>
-    <p>初参加の方向けに、コミュニティの考え方とDiscordの使い方を分けて案内しています。</p>
+    <h1><span>PLUG イベントガイド</span></h1>
 
     <div class="grid">
       <article class="card">
@@ -271,10 +287,9 @@
       <article class="card">
         <div class="card-kicker">Related Links</div>
         <h2>関連リンク</h2>
-        <p>PLUG 関連の資料や補助コンテンツを追加していきます。</p>
         <div class="link-list">
           <div class="link-item">
-            <a href="academy_recap.html">Copilot Studio Agent Academy勉強会おさらい</a>
+            <a href="https://plug.connpass.com/" target="_blank" rel="noopener noreferrer">connpass</a>
           </div>
           <div class="link-item">
             <a href="https://www.youtube.com/@PlugPenPen" target="_blank">PLUG Channel（YouTube）</a>
@@ -295,13 +310,11 @@
 
   <!-- はじめてのPython勉強会セクション -->
   <section class="hero" style="margin-top: 28px;">
-    <div class="eyebrow">はじめてのPython勉強会</div>
     <h1>資料</h1>
-    <p>はじめてのPython勉強会の参加者向けにガイドを用意しました。</p>
 
     <div class="grid">
       <article class="card">
-        <div class="card-kicker">Git &amp; GitHub</div>
+        <div class="card-kicker">Python勉強会</div>
         <h2>はじめての Git と GitHub</h2>
         
         <div class="actions">
@@ -310,11 +323,19 @@
       </article>
 
       <article class="card">
-        <div class="card-kicker">Docker</div>
+        <div class="card-kicker">Python勉強会</div>
         <h2>はじめての Docker</h2>
         
         <div class="actions">
           <a class="button primary" href="docker_intro.html">Docker ガイドを開く</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-kicker">Copilot Studio勉強会</div>
+        <h2>Copilot Studio Agent Academy 勉強会おさらい</h2>
+        <div class="actions">
+          <a class="button primary" href="academy_recap.html">おさらいページを開く</a>
         </div>
       </article>
     </div>
