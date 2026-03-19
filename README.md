@@ -8,6 +8,8 @@ PLUGイベント向けの導入ページ一式です。
 - plug_intro.html: コミュニティ紹介
 - discord_audio_guide.html: Discord音声設定ガイド
 - academy_recap.html: Agent Academy おさらいページ（Mission別に随時更新）
+- git_github_intro.html: はじめてのGitとGitHub（はじめてのPython勉強会向け）
+- docker_intro.html: はじめてのDocker（はじめてのPython勉強会向け、Windows対応）
 
 ## 公開先
 
@@ -24,6 +26,12 @@ git push
 ```
 
 更新後は GitHub Pages の反映に少し時間がかかることがあります。
+
+## 変更履歴
+
+| 日付 | 変更内容 |
+|------|----------|
+| 2026-03-19 | はじめてのPython勉強会向けページを追加（git_github_intro.html、docker_intro.html）、index.html に該当セクションを追加 |
 
 ## 共同編集ルール
 
